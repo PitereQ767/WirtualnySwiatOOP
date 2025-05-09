@@ -20,4 +20,12 @@ public abstract class Organism {
     public Point getPosition() {
         return position;
     }
+
+    public int getInitiative() {
+        return initiative;
+    }
+
+    public int getAge() {
+        return age;
+    }
 }

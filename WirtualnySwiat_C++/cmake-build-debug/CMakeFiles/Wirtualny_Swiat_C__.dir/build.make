@@ -52,10 +52,10 @@ RM = "C:\CLion\CLion 2024.2.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master"
+CMAKE_SOURCE_DIR = "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Wirtualny_Swiat_C__.dir/depend.make
@@ -69,256 +69,256 @@ include CMakeFiles/Wirtualny_Swiat_C__.dir/progress.make
 include CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/main.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/main.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/main.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/main.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/main.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/main.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/main.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/main.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\main.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\main.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/main.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/main.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\main.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\main.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\main.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/main.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\main.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\main.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\main.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\main.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/main.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\main.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\main.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\main.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\main.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Swiat.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Swiat.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/Swiat.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Swiat.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/Swiat.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Swiat.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Swiat.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Swiat.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Swiat.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Swiat.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Swiat.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Swiat.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Swiat.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Swiat.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Swiat.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Swiat.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Swiat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Swiat.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Swiat.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Swiat.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Swiat.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Swiat.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Swiat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Swiat.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Swiat.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Swiat.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Swiat.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Swiat.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Organizm.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Organizm.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/Organizm.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Organizm.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/Organizm.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Organizm.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Organizm.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Organizm.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Organizm.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Organizm.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Organizm.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Organizm.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Organizm.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Organizm.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Organizm.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Organizm.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Organizm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Organizm.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Organizm.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Organizm.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Organizm.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Organizm.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Organizm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Organizm.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Organizm.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Organizm.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Organizm.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Organizm.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zwierze.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zwierze.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/Zwierze.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zwierze.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/Zwierze.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zwierze.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zwierze.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zwierze.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Zwierze.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Zwierze.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Zwierze.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zwierze.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zwierze.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Zwierze.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Zwierze.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Zwierze.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zwierze.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zwierze.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Zwierze.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Zwierze.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Zwierze.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Zwierze.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zwierze.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zwierze.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Zwierze.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Zwierze.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Zwierze.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Zwierze.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Wilk.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Wilk.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/Wilk.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Wilk.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/Wilk.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Wilk.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Wilk.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Wilk.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Wilk.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Wilk.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Wilk.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Wilk.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Wilk.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Wilk.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Wilk.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Wilk.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Wilk.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Wilk.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Wilk.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Wilk.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Wilk.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Wilk.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Wilk.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Wilk.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Wilk.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Wilk.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Wilk.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Wilk.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Punkt.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Punkt.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/Punkt.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Punkt.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/Punkt.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Punkt.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Punkt.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Punkt.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Punkt.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Punkt.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Punkt.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Punkt.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Punkt.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Punkt.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Punkt.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Punkt.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Punkt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Punkt.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Punkt.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Punkt.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Punkt.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Punkt.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Punkt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Punkt.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Punkt.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Punkt.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Punkt.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Punkt.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Owca.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Owca.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/Owca.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Owca.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/Owca.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Owca.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Owca.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Owca.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Owca.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Owca.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Owca.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Owca.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Owca.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Owca.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Owca.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Owca.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Owca.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Owca.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Owca.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Owca.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Owca.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Owca.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Owca.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Owca.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Owca.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Owca.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Owca.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Owca.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zolw.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zolw.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/Zolw.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zolw.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/Zolw.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zolw.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zolw.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zolw.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Zolw.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Zolw.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Zolw.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zolw.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zolw.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Zolw.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Zolw.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Zolw.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zolw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zolw.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Zolw.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Zolw.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Zolw.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Zolw.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zolw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Zolw.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Zolw.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Zolw.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Zolw.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Zolw.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Antylopa.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Antylopa.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/Antylopa.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Antylopa.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/Antylopa.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Antylopa.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Antylopa.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Antylopa.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Antylopa.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Antylopa.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Antylopa.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Antylopa.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Antylopa.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Antylopa.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Antylopa.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Antylopa.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Antylopa.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Antylopa.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Antylopa.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Antylopa.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Antylopa.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Antylopa.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Antylopa.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Antylopa.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Antylopa.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Antylopa.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Antylopa.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Antylopa.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Cyber_Owca.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Cyber_Owca.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/Cyber_Owca.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Cyber_Owca.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/Cyber_Owca.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Cyber_Owca.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Cyber_Owca.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Cyber_Owca.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Cyber_Owca.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Cyber_Owca.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Cyber_Owca.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Cyber_Owca.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Cyber_Owca.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Cyber_Owca.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Cyber_Owca.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Cyber_Owca.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Cyber_Owca.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Cyber_Owca.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Cyber_Owca.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Cyber_Owca.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Cyber_Owca.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Cyber_Owca.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Cyber_Owca.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Cyber_Owca.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Cyber_Owca.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Cyber_Owca.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Cyber_Owca.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Cyber_Owca.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Czlowiek.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Czlowiek.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/Czlowiek.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Czlowiek.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/Czlowiek.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Czlowiek.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Czlowiek.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Czlowiek.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Czlowiek.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Czlowiek.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Czlowiek.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Czlowiek.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Czlowiek.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Czlowiek.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Czlowiek.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Czlowiek.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Czlowiek.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Czlowiek.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Czlowiek.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Czlowiek.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Czlowiek.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Czlowiek.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Czlowiek.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Czlowiek.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Czlowiek.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Czlowiek.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Czlowiek.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Czlowiek.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Lis.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Lis.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/Lis.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Lis.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/Lis.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Lis.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Lis.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Lis.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Lis.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Lis.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Lis.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Lis.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Lis.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Lis.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Lis.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Lis.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Lis.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Lis.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Lis.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Lis.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Lis.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Lis.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Lis.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Lis.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Lis.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Lis.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Lis.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Lis.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Roslina.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Roslina.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/Roslina.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Roslina.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/Roslina.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Roslina.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Roslina.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Roslina.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Roslina.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Roslina.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Roslina.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Roslina.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Roslina.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Roslina.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Roslina.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Roslina.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Roslina.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Roslina.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Roslina.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Roslina.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Roslina.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Roslina.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Roslina.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Roslina.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Roslina.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Roslina.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Roslina.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Roslina.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Trawa.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Trawa.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/Trawa.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Trawa.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/Trawa.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Trawa.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Trawa.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Trawa.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Trawa.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Trawa.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Trawa.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Trawa.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Trawa.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Trawa.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Trawa.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Trawa.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Trawa.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Trawa.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Trawa.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Trawa.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Trawa.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Trawa.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Trawa.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Trawa.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Trawa.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Trawa.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Trawa.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Trawa.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Mlecz.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Mlecz.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/Mlecz.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Mlecz.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/Mlecz.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Mlecz.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Mlecz.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Mlecz.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Mlecz.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Mlecz.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Mlecz.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Mlecz.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Mlecz.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Mlecz.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Mlecz.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Mlecz.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Mlecz.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Mlecz.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Mlecz.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Mlecz.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Mlecz.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Mlecz.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Mlecz.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Mlecz.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Mlecz.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Mlecz.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Mlecz.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Mlecz.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Guarana.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Guarana.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/Guarana.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Guarana.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/Guarana.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Guarana.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Guarana.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Guarana.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Guarana.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Guarana.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Guarana.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Guarana.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Guarana.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Guarana.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Guarana.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Guarana.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Guarana.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Guarana.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Guarana.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Guarana.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Guarana.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Guarana.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Guarana.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/Guarana.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\Guarana.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Guarana.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\Guarana.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\Guarana.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/WilczeJagody.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/WilczeJagody.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/WilczeJagody.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/WilczeJagody.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/WilczeJagody.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/WilczeJagody.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/WilczeJagody.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/WilczeJagody.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\WilczeJagody.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\WilczeJagody.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\WilczeJagody.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/WilczeJagody.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/WilczeJagody.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\WilczeJagody.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\WilczeJagody.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\WilczeJagody.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/WilczeJagody.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/WilczeJagody.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\WilczeJagody.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\WilczeJagody.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\WilczeJagody.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\WilczeJagody.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/WilczeJagody.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/WilczeJagody.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\WilczeJagody.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\WilczeJagody.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\WilczeJagody.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\WilczeJagody.cpp.s
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/BarszczSosnowskiego.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/flags.make
-CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/BarszczSosnowskiego.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/WirtualnySwiatOOP-master/WirtualnySwiatOOP-master/pliki_zrodlowe/BarszczSosnowskiego.cpp
+CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/BarszczSosnowskiego.cpp.obj: C:/Users/48734/Documents/Studia/2\ semestr/Programowanie\ Obiektowe/projekt/Wirtualny_Swiat/WirtualnySwiat_C++/pliki_zrodlowe/BarszczSosnowskiego.cpp
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/BarszczSosnowskiego.cpp.obj: CMakeFiles/Wirtualny_Swiat_C__.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/BarszczSosnowskiego.cpp.obj"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/BarszczSosnowskiego.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\BarszczSosnowskiego.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\BarszczSosnowskiego.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\BarszczSosnowskiego.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/BarszczSosnowskiego.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/BarszczSosnowskiego.cpp.obj -MF CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\BarszczSosnowskiego.cpp.obj.d -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\BarszczSosnowskiego.cpp.obj -c "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\BarszczSosnowskiego.cpp"
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/BarszczSosnowskiego.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/BarszczSosnowskiego.cpp.i"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\BarszczSosnowskiego.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\BarszczSosnowskiego.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\BarszczSosnowskiego.cpp" > CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\BarszczSosnowskiego.cpp.i
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/BarszczSosnowskiego.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wirtualny_Swiat_C__.dir/pliki_zrodlowe/BarszczSosnowskiego.cpp.s"
-	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\pliki_zrodlowe\BarszczSosnowskiego.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\BarszczSosnowskiego.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\pliki_zrodlowe\BarszczSosnowskiego.cpp" -o CMakeFiles\Wirtualny_Swiat_C__.dir\pliki_zrodlowe\BarszczSosnowskiego.cpp.s
 
 # Object files for target Wirtualny_Swiat_C__
 Wirtualny_Swiat_C___OBJECTS = \
@@ -366,7 +366,7 @@ Wirtualny_Swiat_C__.exe: CMakeFiles/Wirtualny_Swiat_C__.dir/build.make
 Wirtualny_Swiat_C__.exe: CMakeFiles/Wirtualny_Swiat_C__.dir/linkLibs.rsp
 Wirtualny_Swiat_C__.exe: CMakeFiles/Wirtualny_Swiat_C__.dir/objects1.rsp
 Wirtualny_Swiat_C__.exe: CMakeFiles/Wirtualny_Swiat_C__.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable Wirtualny_Swiat_C__.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable Wirtualny_Swiat_C__.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Wirtualny_Swiat_C__.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -378,6 +378,6 @@ CMakeFiles/Wirtualny_Swiat_C__.dir/clean:
 .PHONY : CMakeFiles/Wirtualny_Swiat_C__.dir/clean
 
 CMakeFiles/Wirtualny_Swiat_C__.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master" "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master" "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug" "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug" "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\WirtualnySwiatOOP-master\WirtualnySwiatOOP-master\cmake-build-debug\CMakeFiles\Wirtualny_Swiat_C__.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++" "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++" "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug" "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug" "C:\Users\48734\Documents\Studia\2 semestr\Programowanie Obiektowe\projekt\Wirtualny_Swiat\WirtualnySwiat_C++\cmake-build-debug\CMakeFiles\Wirtualny_Swiat_C__.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/Wirtualny_Swiat_C__.dir/depend
 

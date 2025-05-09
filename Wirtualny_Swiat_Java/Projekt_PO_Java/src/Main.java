@@ -12,6 +12,7 @@ public class Main {
         int heightInt = Integer.parseInt(height);
 
         World world = new World(widthInt, heightInt);
+        world.createWorld();
 
         Frame frame = new Frame(world);
         frame.setVisible(true);

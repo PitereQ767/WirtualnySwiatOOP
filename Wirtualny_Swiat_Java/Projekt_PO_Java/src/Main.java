@@ -1,10 +1,19 @@
+import model.World;
+import view.Frame;
+
+import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello!");
+        String width = JOptionPane.showInputDialog("Podaj szerokość dla świata: ");
+        String height = JOptionPane.showInputDialog("Podaj wysokość dla świata: ");
 
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
+        int widthInt = Integer.parseInt(width);
+        int heightInt = Integer.parseInt(height);
+
+        World world = new World(widthInt, heightInt);
+
+        Frame frame = new Frame(world);
+        frame.setVisible(true);
     }
 }

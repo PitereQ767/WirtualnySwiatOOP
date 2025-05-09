@@ -17,4 +17,9 @@ public class Antelope extends Animal {
     public Color getColor(){
         return antylopeColor;
     }
+
+    @Override
+    public String getNazwa(){
+        return "Antylopa";
+    }
 }

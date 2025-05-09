@@ -20,6 +20,8 @@ public class Frame extends JFrame {
     private JLabel directionLabel;
     private World.Direction humanMove = null;
 
+    private final JTextArea logArea;
+
     public Frame(World world){
         this.world = world;
         setTitle("World Simulator");
@@ -58,9 +60,21 @@ public class Frame extends JFrame {
 
         add(legendPanel, BorderLayout.EAST);
 
+        logArea = new JTextArea(10, 20);
+        logArea.setEditable(false);
+        JScrollPane scrollPane = new JScrollPane(logArea);
+        JPanel lefPanel = new JPanel();
+        lefPanel.setLayout(new BoxLayout(lefPanel, BoxLayout.Y_AXIS));
+        lefPanel.add(new JLabel("Log zdarzeń: "));
+        lefPanel.add(scrollPane);
+
+        add(lefPanel, BorderLayout.WEST);
 
 
         pack();
+
+        setFocusable(true);
+        requestFocusInWindow();
 
         addKeyListener(new KeyAdapter() {
             @Override
@@ -85,9 +99,30 @@ public class Frame extends JFrame {
                     case KeyEvent.VK_ENTER -> {
                         if (humanMove != null) {
                             world.humanMove = humanMove;
-//                            world.wykonajTure();
+                            world.makeRun();
                             humanMove = null;
                             directionLabel.setText("Kierunek: brak");
+
+                            StringBuilder sb = new StringBuilder();
+                            for (String message : world.getEvents()){
+                                sb.append(message).append("\n");
+                            }
+                            logArea.setText(sb.toString());
+                            world.clearEventLog();
+
+                            tura++;
+                            infoLabel.setText("Tura: " + tura);
+                            panel.repaint();
+                        }else {
+                            world.makeRun();
+
+                            StringBuilder sb = new StringBuilder();
+                            for (String message : world.getEvents()){
+                                sb.append(message).append("\n");
+                            }
+
+                            logArea.setText(sb.toString());
+                            world.clearEventLog();
                             tura++;
                             infoLabel.setText("Tura: " + tura);
                             panel.repaint();
@@ -96,8 +131,6 @@ public class Frame extends JFrame {
                 }
             }
         });
-
-        setFocusable(true);
     }
 
     private JPanel createLegendItem(Color color, String name) {

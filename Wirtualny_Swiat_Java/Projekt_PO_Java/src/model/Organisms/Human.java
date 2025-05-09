@@ -17,4 +17,9 @@ public class Human extends Animal {
     public Color getColor(){
         return humanColor;
     }
+
+    @Override
+    public String getNazwa(){
+        return "Człowiek";
+    }
 }

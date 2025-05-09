@@ -10,9 +10,11 @@ import java.util.Random;
 public class World {
     private final int width, height;
     private List<Organism> organisms;
+    private List<String> events = new ArrayList<>();
     private final int numberOfOrganisms = 10;
     private final int numberOfTypeOrganisms = 6;
     private final Random random = new Random();
+    public boolean endGame = false;
 
     public enum Direction {
         GORA, DOL, LEWO, PRAWO
@@ -81,7 +83,7 @@ public class World {
             int x = random.nextInt(width);
             int y = random.nextInt(height);
             position = new Point(x, y);
-        }while (!isEmpty(position) && !isCorrectPosition(position));
+        }while (!isEmpty(position) || !isCorrectPosition(position));
 
         return position;
     }
@@ -112,5 +114,39 @@ public class World {
                 Comparator.comparing(Organism::getInitiative).reversed()
                         .thenComparing(Organism::getAge).reversed()
         );
+    }
+
+    public void makeRun(){
+        sortOrganisms();
+        for (Organism o : organisms) {
+            o.Action();
+        }
+    }
+
+    public void moveOrganism(Organism org, Point position){
+        org.setPosition(position);
+    }
+
+    public void tryToMoveOrganism(Organism org, Point position){
+        if (!isCorrectPosition(position)){
+            addEvent(org.getNazwa() + " probował wyjść za mape");
+        }else{
+            if (isEmpty(position)){
+                moveOrganism(org, position);
+                addEvent(org.getNazwa() + " przesunal sie na (" + position.getX() + ", " + position.getY() + ")");
+            }
+        }
+    }
+
+    public void addEvent(String message){
+        events.add(message);
+    }
+
+    public List<String> getEvents(){
+        return events;
+    }
+
+    public void clearEventLog(){
+        events.clear();
     }
 }

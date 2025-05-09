@@ -18,4 +18,9 @@ public class Wolf extends Animal {
         return wilkColor;
     }
 
+    @Override
+    public String getNazwa(){
+        return "Wilk";
+    }
+
 }

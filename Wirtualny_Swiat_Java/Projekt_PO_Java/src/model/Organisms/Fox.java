@@ -18,4 +18,9 @@ public class Fox extends Animal {
     public Color getColor(){
         return foxColor;
     }
+
+    @Override
+    public String getNazwa(){
+        return "Lis";
+    }
 }

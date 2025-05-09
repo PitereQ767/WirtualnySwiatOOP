@@ -17,4 +17,9 @@ public class Sheep extends Animal {
     public Color getColor(){
         return sheepColor;
     }
+
+    @Override
+    public String getNazwa(){
+        return "Owca";
+    }
 }

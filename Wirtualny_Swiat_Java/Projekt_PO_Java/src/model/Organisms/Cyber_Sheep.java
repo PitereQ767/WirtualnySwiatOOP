@@ -17,4 +17,9 @@ public class Cyber_Sheep extends Animal {
     public Color getColor(){
         return cyberColor;
     }
+
+    @Override
+    public String getNazwa(){
+        return "Cyber_Owca";
+    }
 }

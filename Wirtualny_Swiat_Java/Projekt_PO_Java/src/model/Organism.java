@@ -3,7 +3,8 @@ package model;
 import java.awt.*;
 
 public abstract class Organism {
-    private final int initiative, power, age = 0;
+    private final int initiative, power;
+    private int age;
     boolean alive;
     World world;
     Point position;
@@ -16,9 +17,15 @@ public abstract class Organism {
     }
 
     public abstract Color getColor();
+    public abstract void Action();
+    public abstract String getNazwa();
 
     public Point getPosition() {
         return position;
+    }
+
+    public void setPosition(Point position) {
+        this.position = position;
     }
 
     public int getInitiative() {
@@ -27,5 +34,9 @@ public abstract class Organism {
 
     public int getAge() {
         return age;
+    }
+
+    protected void increaseAge(){
+        this.age += 1;
     }
 }

@@ -48,13 +48,18 @@ public class Frame extends JFrame {
         legendPanel.setLayout(new BoxLayout(legendPanel, BoxLayout.Y_AXIS)); // pionowe ułożenie
         legendPanel.setBorder(BorderFactory.createTitledBorder("Description"));
 
-        legendPanel.add(createLegendItem(Color.GRAY, "Wolf"));
+        legendPanel.add(createLegendItem(Color.DARK_GRAY, "Wolf"));
         legendPanel.add(createLegendItem(Color.ORANGE, "Fox"));
         legendPanel.add(createLegendItem(Color.YELLOW, "Antylope"));
         legendPanel.add(createLegendItem(Color.CYAN, "CyberSheep"));
         legendPanel.add(createLegendItem(Color.PINK, "Human"));
         legendPanel.add(createLegendItem(Color.GREEN, "Turtle"));
         legendPanel.add(createLegendItem(Color.LIGHT_GRAY, "Sheep"));
+        legendPanel.add(createLegendItem(Color.BLUE, "Milkweed"));
+        legendPanel.add(createLegendItem(Color.BLACK, "Grass"));
+        legendPanel.add(createLegendItem(Color.MAGENTA, "Berries"));
+        legendPanel.add(createLegendItem(Color.GRAY, "Guarana"));
+
 
         legendPanel.setPreferredSize(new Dimension(120, world.getHeight()));
 

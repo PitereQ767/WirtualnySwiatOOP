@@ -1,32 +1,31 @@
 package model.Organisms;
 
 import model.Organism;
+import model.Plant;
 import model.Point;
 import model.World;
-import model.Animal;
 
 import java.awt.*;
 
-public class Wolf extends Animal {
-    private Color wilkColor = Color.DARK_GRAY;
+public class Grass extends Plant {
+    private final Color grassColor = Color.BLACK;
 
-    public Wolf(World world, Point position){
-        super(world, position, 9, 5);
+    public Grass(World world, Point position){
+        super(world, position, 0);
     }
 
     @Override
     public Color getColor(){
-        return wilkColor;
+        return grassColor;
     }
 
     @Override
     public String getNazwa(){
-        return "Wilk";
+        return "Trawa";
     }
 
     @Override
     public Organism makeNewOrganism(Point position){
-        return new Wolf(world, position);
+        return new Grass(world, position);
     }
-
 }

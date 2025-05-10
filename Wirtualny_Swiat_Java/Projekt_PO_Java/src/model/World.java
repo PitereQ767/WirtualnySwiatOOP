@@ -11,8 +11,8 @@ public class World {
     private final int width, height;
     private List<Organism> organisms;
     private List<String> events = new ArrayList<>();
-    private final int numberOfOrganisms = 10;
-    private final int numberOfTypeOrganisms = 1;
+    private final int numberOfOrganisms = 20;
+    private final int numberOfTypeOrganisms = 11;
     private final Random random = new Random();
     public boolean endGame = false;
 
@@ -73,6 +73,10 @@ public class World {
             case 4: return new Antelope(this, position);
             case 5: return new Cyber_Sheep(this, position);
             case 6: return new BarszczSosnowskiego(this, position);
+            case 7: return new Guarana(this, position);
+            case 8: return new Grass(this, position);
+            case 9: return new Milkweed(this, position);
+            case 10: return new Berries(this, position);
         }
 
         return null;
@@ -124,7 +128,9 @@ public class World {
     public void makeRun(){
         sortOrganisms();
         for (Organism o : new ArrayList<>(organisms)) {
-            o.Action();
+            if (o.getIsAlive()){
+                o.Action();
+            }
         }
         cleadDeadOrganisms();
     }
@@ -142,7 +148,7 @@ public class World {
                 addEvent(org.getNazwa() + " przesunal sie na (" + position.getX() + ", " + position.getY() + ")");
             }else {
                 Organism other = getOrganismaAtPosition(position);
-                other.Collision(org);
+                org.Collision(other);
             }
         }
     }

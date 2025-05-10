@@ -1,11 +1,7 @@
-package model.Organisms;
-
-import model.Organism;
-import model.Point;
-import model.World;
+package model;
 
 public abstract class Plant extends Organism {
-    private final int SPREAD_CHANCE = 20;
+    private final int SPREAD_CHANCE = 1;
 
 
     public Plant(World world, Point position, int power){
@@ -19,7 +15,7 @@ public abstract class Plant extends Organism {
 
         if (trySpread()){
             Point newPos = findPosition();
-            if (newPos.getX() != getPosition().getX() && newPos.getY() != getPosition().getY()){
+            if (newPos.getX() != getPosition().getX() || newPos.getY() != getPosition().getY()){
                 Organism newOrganism = makeNewOrganism(newPos);
                 world.addOrganism(newOrganism, newPos);
                 world.addEvent(newOrganism.getNazwa() + " rozmnożył sie na pozycji " + newPos.getX() + ", " + newPos.getY() + ")");

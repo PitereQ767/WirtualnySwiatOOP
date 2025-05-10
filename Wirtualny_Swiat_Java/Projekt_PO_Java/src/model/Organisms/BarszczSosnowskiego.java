@@ -1,6 +1,7 @@
 package model.Organisms;
 
 import model.Organism;
+import model.Plant;
 import model.Point;
 import model.World;
 

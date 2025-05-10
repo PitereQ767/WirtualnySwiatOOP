@@ -9,7 +9,6 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.awt.geom.Point2D.distance;
 
 public class Cyber_Sheep extends Animal {
     private Color cyberColor = Color.CYAN;
@@ -43,7 +42,7 @@ public class Cyber_Sheep extends Animal {
         }
 
         for(Point barszcz : barszcze){
-            double dist = distance(this.getPosition().getX(), this.getPosition().getY(), barszcz.getX(), barszcz.getY());
+            double dist = distance(this.getPosition(), barszcz);
             if (dist < minDist){
                 minDist = dist;
                 closest = new Point(barszcz.getX(), barszcz.getY());
@@ -57,7 +56,15 @@ public class Cyber_Sheep extends Animal {
             Point newPos = new Point(currentPos.getX() + dx, currentPos.getY() + dy);
 
             world.tryToMoveOrganism(this, newPos);
+        }else {
+            super.Action();
         }
+    }
+
+    private double distance(Point a, Point b){
+        int dx = a.getX() - b.getX();
+        int dy = a.getY() - b.getY();
+        return Math.sqrt(dx*dx + dy*dy);
     }
 
     @Override

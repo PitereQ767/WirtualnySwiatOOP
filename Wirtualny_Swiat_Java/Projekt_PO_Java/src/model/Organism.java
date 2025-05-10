@@ -86,4 +86,16 @@ public abstract class Organism {
         return positions.get(random.nextInt(positions.size())); // losowa dostępna pozycja
     }
 
+    public void collisionHelper(Organism deffender, Point position){
+        if(getPower() >= deffender.getPower()){
+            deffender.setAlive(false);
+            world.addEvent(getNazwa() + " zabił " + deffender.getNazwa() + " na pozycji (" + position.getX() + ", " + position.getY() + ")");
+            world.moveOrganism(this, position);
+        }else {
+            this.setAlive(false);
+            world.addEvent(deffender.getNazwa() + " zaił " + this.getNazwa() + " na pozycji (" + position.getX() + ", " + position.getY() + ")");
+            world.moveOrganism(deffender, position);
+        }
+    }
+
 }

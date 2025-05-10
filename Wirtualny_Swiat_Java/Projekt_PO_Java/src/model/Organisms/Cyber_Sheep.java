@@ -59,4 +59,9 @@ public class Cyber_Sheep extends Animal {
             world.tryToMoveOrganism(this, newPos);
         }
     }
+
+    @Override
+    public Organism makeNewOrganism(Point position){
+        return new Cyber_Sheep(world, position);
+    }
 }

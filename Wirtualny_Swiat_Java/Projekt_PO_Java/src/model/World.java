@@ -12,7 +12,7 @@ public class World {
     private List<Organism> organisms;
     private List<String> events = new ArrayList<>();
     private final int numberOfOrganisms = 10;
-    private final int numberOfTypeOrganisms = 7;
+    private final int numberOfTypeOrganisms = 1;
     private final Random random = new Random();
     public boolean endGame = false;
 
@@ -36,7 +36,7 @@ public class World {
         return this.width;
     }
 
-    private boolean isEmpty(Point position){
+    public boolean isEmpty(Point position){
         for (Organism o : organisms){
             if (o.position.getX() == position.getX() && o.position.getY() == position.getY()){
                 return false;
@@ -45,7 +45,7 @@ public class World {
         return true;
     }
 
-    private boolean isCorrectPosition(Point position){
+    public boolean isCorrectPosition(Point position){
         int x = position.getX();
         int y = position.getY();
 
@@ -56,7 +56,7 @@ public class World {
         return true;
     }
 
-    private void addOrganism(Organism org, Point position){
+    public void addOrganism(Organism org, Point position){
         org.position.setX(position.getX());
         org.position.setY(position.getY());
         organisms.add(org);
@@ -117,11 +117,16 @@ public class World {
         );
     }
 
+    private void cleadDeadOrganisms(){
+        organisms.removeIf(o -> !o.getIsAlive());
+    }
+
     public void makeRun(){
         sortOrganisms();
-        for (Organism o : organisms) {
+        for (Organism o : new ArrayList<>(organisms)) {
             o.Action();
         }
+        cleadDeadOrganisms();
     }
 
     public void moveOrganism(Organism org, Point position){
@@ -137,7 +142,7 @@ public class World {
                 addEvent(org.getNazwa() + " przesunal sie na (" + position.getX() + ", " + position.getY() + ")");
             }else {
                 Organism other = getOrganismaAtPosition(position);
-                
+                other.Collision(org);
             }
         }
     }

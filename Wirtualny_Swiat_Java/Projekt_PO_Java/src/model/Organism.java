@@ -1,13 +1,17 @@
 package model;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public abstract class Organism {
     private final int initiative, power;
     private int age;
-    boolean alive;
+    private boolean alive = true;
     protected World world;
     Point position;
+    public final Random random = new Random();
 
     public Organism(World world, Point position, int power, int initiative){
         this.world = world;
@@ -19,7 +23,8 @@ public abstract class Organism {
     public abstract Color getColor();
     public abstract void Action();
     public abstract String getNazwa();
-    public abstract void Collision();
+    public abstract void Collision(Organism attacker);
+    public abstract Organism makeNewOrganism(Point position);
 
     public Point getPosition() {
         return position;
@@ -27,6 +32,14 @@ public abstract class Organism {
 
     public void setPosition(Point position) {
         this.position = position;
+    }
+
+    public void setAlive(boolean alive) {
+        this.alive = alive;
+    }
+
+    public boolean getIsAlive() {
+        return alive;
     }
 
     public int getInitiative() {
@@ -44,4 +57,33 @@ public abstract class Organism {
     protected void increaseAge(){
         this.age += 1;
     }
+
+    protected Point findPosition() {
+        List<Point> positions = new ArrayList<>();
+        Point currentPosition = getPosition();
+
+        // Sprawdź wszystkie 4 sąsiednie pola
+        int x = currentPosition.getX();
+        int y = currentPosition.getY();
+
+        Point[] directions = new Point[] {
+                new Point(x, y - 1), // góra
+                new Point(x + 1, y), // prawo
+                new Point(x, y + 1), // dół
+                new Point(x - 1, y)  // lewo
+        };
+
+        for (Point pos : directions) {
+            if (world.isCorrectPosition(pos) && world.isEmpty(pos)) {
+                positions.add(pos);
+            }
+        }
+
+        if (positions.isEmpty()) {
+            return currentPosition; // nie ma gdzie się rozmnożyć
+        }
+
+        return positions.get(random.nextInt(positions.size())); // losowa dostępna pozycja
+    }
+
 }

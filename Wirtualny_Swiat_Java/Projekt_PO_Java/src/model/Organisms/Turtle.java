@@ -1,6 +1,7 @@
 package model.Organisms;
 
 import model.Animal;
+import model.Organism;
 import model.Point;
 import model.World;
 
@@ -31,5 +32,10 @@ public class Turtle extends Animal {
             return;
         }
         super.Action();
+    }
+
+    @Override
+    public Organism makeNewOrganism(Point position){
+        return new Turtle(world, position);
     }
 }

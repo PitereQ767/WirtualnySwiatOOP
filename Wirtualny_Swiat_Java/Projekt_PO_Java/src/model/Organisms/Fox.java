@@ -60,4 +60,9 @@ public class Fox extends Animal {
         }
         return true;
     }
+
+    @Override
+    public Organism makeNewOrganism(Point position){
+        return new Fox(world, position);
+    }
 }

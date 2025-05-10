@@ -1,6 +1,7 @@
 package model.Organisms;
 
 import model.Animal;
+import model.Organism;
 import model.Point;
 import model.World;
 
@@ -38,5 +39,10 @@ public class Antelope extends Animal {
         }
 
         world.tryToMoveOrganism(this, newPosition);
+    }
+
+    @Override
+    public Organism makeNewOrganism(Point position){
+        return new Antelope(world, position);
     }
 }

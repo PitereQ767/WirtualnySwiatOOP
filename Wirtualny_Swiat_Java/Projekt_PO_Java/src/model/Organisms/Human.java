@@ -1,6 +1,7 @@
 package model.Organisms;
 
 import model.Animal;
+import model.Organism;
 import model.Point;
 import model.World;
 
@@ -21,5 +22,10 @@ public class Human extends Animal {
     @Override
     public String getNazwa(){
         return "Człowiek";
+    }
+
+    @Override
+    public Organism makeNewOrganism(Point position){
+        return new Human(world, position);
     }
 }

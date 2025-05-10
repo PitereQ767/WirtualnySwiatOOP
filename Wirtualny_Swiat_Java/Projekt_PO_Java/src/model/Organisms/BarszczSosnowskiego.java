@@ -6,11 +6,11 @@ import model.World;
 
 import java.awt.*;
 
-public class BarszczSosnowskiego extends Organism {
+public class BarszczSosnowskiego extends Plant {
     private final Color barszczColor = Color.RED;
 
     public BarszczSosnowskiego(World world, Point position){
-        super(world, position, 10, 0);
+        super(world, position, 10);
     }
 
     @Override
@@ -24,7 +24,7 @@ public class BarszczSosnowskiego extends Organism {
     }
 
     @Override
-    public void Action(){
-
+    public Organism makeNewOrganism(Point position){
+        return new BarszczSosnowskiego(world, position);
     }
 }

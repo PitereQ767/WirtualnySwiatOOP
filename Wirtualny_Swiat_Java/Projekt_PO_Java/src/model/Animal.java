@@ -1,13 +1,15 @@
 package model;
 
+import java.util.Objects;
 import java.util.Random;
 
 public abstract class Animal extends Organism{
-    public final Random random = new Random();
+
 
     public Animal(World world, Point position, int power, int initiative){
         super(world, position, power, initiative);
     }
+
 
     @Override
     public void Action(){
@@ -27,7 +29,20 @@ public abstract class Animal extends Organism{
     }
 
     @Override
-    public void Collision(){
+    public void Collision(Organism attacker){
+        if (Objects.equals(this.getNazwa(), attacker.getNazwa())){
+            Multiplitaction(this);
+            return;
+        }
+    }
+
+    private void Multiplitaction(Organism organism){
+        Point newPosiotion = findPosition();
+        if (newPosiotion.getX() != getPosition().getX() || newPosiotion.getY() != getPosition().getY()){
+            Organism newOrganism = makeNewOrganism(newPosiotion);
+            world.addOrganism(newOrganism, newPosiotion);
+            world.addEvent(organism.getNazwa() + " rozmnożył się na pozycji " + newPosiotion.getX() + ", " + newPosiotion.getY() + ")");
+        }
 
     }
 }

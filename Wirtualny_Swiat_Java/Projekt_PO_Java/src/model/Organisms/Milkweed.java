@@ -28,4 +28,22 @@ public class Milkweed extends Plant {
     public Organism makeNewOrganism(Point position){
         return new Milkweed(world, position);
     }
+
+    @Override
+    public void Action(){
+        increaseAge();
+
+        for (int i = 0; i < 3; i++){
+            if (super.trySpread()){
+                Point newPos = findPosition();
+                if (newPos.getX() != getPosition().getX() || newPos.getY() != getPosition().getY()){
+                    Organism newOrganism = makeNewOrganism(newPos);
+                    world.addOrganism(newOrganism, newPos);
+                    world.addEvent(newOrganism.getNazwa() + " rozmnożył sie na pozycji " + newPos.getX() + ", " + newPos.getY() + ")");
+                    return;
+                }
+            }
+        }
+
+    }
 }

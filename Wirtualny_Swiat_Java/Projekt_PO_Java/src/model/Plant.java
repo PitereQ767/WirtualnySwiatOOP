@@ -23,16 +23,13 @@ public abstract class Plant extends Organism {
         }
     }
 
-    private boolean trySpread(){
+    protected boolean trySpread(){
         int rand = random.nextInt(100);
         return rand < SPREAD_CHANCE;
     }
 
     @Override
     public void Collision(Organism attacker){
-        if (attacker.getPower() >= getPower()){
-            this.setAlive(false);
-            world.addEvent(attacker.getNazwa() + " zabil " + getNazwa() + " na pozycji (" + getPosition().getX() + ", " + getPosition().getY() + ")");
-        }
+        collisionHelper(attacker, this.getPosition());
     }
 }

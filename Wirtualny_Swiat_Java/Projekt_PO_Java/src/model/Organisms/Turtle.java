@@ -6,6 +6,7 @@ import model.Point;
 import model.World;
 
 import java.awt.*;
+import java.util.Objects;
 
 public class Turtle extends Animal {
     private Color turtleColor = Color.GREEN;
@@ -37,5 +38,20 @@ public class Turtle extends Animal {
     @Override
     public Organism makeNewOrganism(Point position){
         return new Turtle(world, position);
+    }
+
+    @Override
+    public void Collision(Organism attacker){
+        if (Objects.equals(this.getNazwa(), attacker.getNazwa())){
+            super.Multiplitaction(attacker);
+            return;
+        }
+
+        if (attacker.getPower() < 5){
+            world.addEvent("Zołw odparł atak " + attacker.getNazwa() + " na pozycji (" + getPosition().getX() + ", " + getPosition().getY() + ")");
+            return;
+        }
+
+        collisionHelper(attacker, this.getPosition());
     }
 }

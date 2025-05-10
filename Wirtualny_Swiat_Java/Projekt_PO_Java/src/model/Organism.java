@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Random;
 
 public abstract class Organism {
-    private final int initiative, power;
-    private int age;
+    private final int initiative;
+    private int age, power;
     private boolean alive = true;
     protected World world;
     Point position;
@@ -54,6 +54,10 @@ public abstract class Organism {
         return power;
     }
 
+    public void setPower(int power){
+        this.power = power;
+    }
+
     protected void increaseAge(){
         this.age += 1;
     }
@@ -86,15 +90,20 @@ public abstract class Organism {
         return positions.get(random.nextInt(positions.size())); // losowa dostępna pozycja
     }
 
-    public void collisionHelper(Organism deffender, Point position){
-        if(getPower() >= deffender.getPower()){
-            deffender.setAlive(false);
-            world.addEvent(getNazwa() + " zabił " + deffender.getNazwa() + " na pozycji (" + position.getX() + ", " + position.getY() + ")");
-            world.moveOrganism(this, position);
-        }else {
+    public void collisionHelper(Organism attacker, Point position){
+        if(attacker.getPower() >= this.getPower()){
             this.setAlive(false);
-            world.addEvent(deffender.getNazwa() + " zaił " + this.getNazwa() + " na pozycji (" + position.getX() + ", " + position.getY() + ")");
-            world.moveOrganism(deffender, position);
+            world.addEvent(attacker.getNazwa() + " zabił " + this.getNazwa() + " na pozycji (" + position.getX() + ", " + position.getY() + ")");
+            if (attacker.getIsAlive()){
+                world.moveOrganism(attacker, position);
+            }
+
+        }else {
+            attacker.setAlive(false);
+            world.addEvent(this.getNazwa() + " zaił " + attacker.getNazwa() + " na pozycji (" + position.getX() + ", " + position.getY() + ")");
+            if (this.getIsAlive()){
+                world.moveOrganism(this, position);
+            }
         }
     }
 

@@ -29,16 +29,16 @@ public abstract class Animal extends Organism{
     }
 
     @Override
-    public void Collision(Organism deffender){
-        if (Objects.equals(this.getNazwa(), deffender.getNazwa())){
-            Multiplitaction(deffender);
+    public void Collision(Organism attacker){
+        if (Objects.equals(this.getNazwa(), attacker.getNazwa())){
+            Multiplitaction(attacker);
             return;
         }
 
-        collisionHelper(deffender, deffender.getPosition());
+        collisionHelper(attacker, this.getPosition());
     }
 
-    private void Multiplitaction(Organism organism){
+    protected void Multiplitaction(Organism organism){
         Point newPosiotion = findPosition();
         if (newPosiotion.getX() != getPosition().getX() || newPosiotion.getY() != getPosition().getY()){
             Organism newOrganism = makeNewOrganism(newPosiotion);

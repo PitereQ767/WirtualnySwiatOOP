@@ -6,6 +6,7 @@ import model.Point;
 import model.World;
 
 import java.awt.*;
+import java.util.Objects;
 
 public class Antelope extends Animal {
     private Color antylopeColor = Color.YELLOW;
@@ -45,4 +46,27 @@ public class Antelope extends Animal {
     public Organism makeNewOrganism(Point position){
         return new Antelope(world, position);
     }
+
+    @Override
+    public void Collision(Organism attacker){
+        if (Objects.equals(this.getNazwa(), attacker.getNazwa())){
+            super.Multiplitaction(attacker);
+            return;
+        }
+
+        int ranNum = random.nextInt(100);
+
+        if (ranNum < 50){
+            Point newPos = findPosition();
+            if (newPos.getX() != getPosition().getX() || newPos.getY() != getPosition().getY()){
+                world.moveOrganism(attacker, this.getPosition());
+                world.moveOrganism(this, newPos);
+                world.addEvent("Antylopa ucieka przed " + attacker.getNazwa() + " na pozycje (" + newPos.getX() + ", " + newPos.getY() + ")");
+                return;
+            }
+        }
+
+        collisionHelper(attacker, this.getPosition());
+    }
+
 }

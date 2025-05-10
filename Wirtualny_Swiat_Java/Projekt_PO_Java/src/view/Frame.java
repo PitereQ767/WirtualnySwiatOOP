@@ -1,5 +1,6 @@
 package view;
 
+import model.Organisms.Human;
 import model.World;
 
 import javax.swing.*;
@@ -18,9 +19,12 @@ public class Frame extends JFrame {
     private final JLabel idLabel;
 
     private JLabel directionLabel;
+    private  JLabel immortalityLabel;
     private World.Direction humanMove = null;
 
     private final JTextArea logArea;
+
+    private int humanLastImmortality;
 
     public Frame(World world){
         this.world = world;
@@ -35,8 +39,10 @@ public class Frame extends JFrame {
         JPanel infoPanel = new JPanel();
         infoLabel = new JLabel("Tura: " + tura);
         directionLabel = new JLabel("Kierunek: brak");
+        immortalityLabel = new JLabel("Niesmiertelnosc: Nieaktywna");
         infoPanel.add(infoLabel);
         infoPanel.add(directionLabel);
+        infoPanel.add(immortalityLabel);
         add(infoPanel, BorderLayout.SOUTH);
 
         JPanel idPanel = new JPanel();
@@ -59,9 +65,10 @@ public class Frame extends JFrame {
         legendPanel.add(createLegendItem(Color.BLACK, "Grass"));
         legendPanel.add(createLegendItem(Color.MAGENTA, "Berries"));
         legendPanel.add(createLegendItem(Color.GRAY, "Guarana"));
+        legendPanel.add(createLegendItem(Color.RED, "Barszcz Sosnowskiego"));
 
 
-        legendPanel.setPreferredSize(new Dimension(120, world.getHeight()));
+        legendPanel.setPreferredSize(new Dimension(180, world.getHeight()));
 
         add(legendPanel, BorderLayout.EAST);
 
@@ -101,12 +108,26 @@ public class Frame extends JFrame {
                         humanMove = World.Direction.PRAWO;
                         directionLabel.setText("Kierunek: PRAWO");
                     }
+                    case KeyEvent.VK_N -> {
+                        Human human = world.getHuman();
+                        if (!human.getImmortality()){
+                            human.setImmortality(true);
+                            immortalityLabel.setText("Niesmiertelnosc: Aktywna");
+                            humanLastImmortality = tura;
+                        }
+                    }
                     case KeyEvent.VK_ENTER -> {
                         if (humanMove != null) {
                             world.humanMove = humanMove;
                             world.makeRun();
                             humanMove = null;
                             directionLabel.setText("Kierunek: brak");
+
+                            Human human = world.getHuman();
+                            if (tura - humanLastImmortality == 5){
+                                human.setImmortality(false);
+                                immortalityLabel.setText("Niesmiertelnosc: Nieaktywna");
+                            }
 
                             StringBuilder sb = new StringBuilder();
                             for (String message : world.getEvents()){
@@ -120,6 +141,12 @@ public class Frame extends JFrame {
                             panel.repaint();
                         }else {
                             world.makeRun();
+
+                            Human human = world.getHuman();
+                            if (tura - humanLastImmortality == 5){
+                                human.setImmortality(false);
+                                immortalityLabel.setText("Niesmiertelnosc: Nieaktywna");
+                            }
 
                             StringBuilder sb = new StringBuilder();
                             for (String message : world.getEvents()){

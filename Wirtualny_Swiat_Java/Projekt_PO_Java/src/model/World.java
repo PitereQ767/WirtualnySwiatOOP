@@ -106,6 +106,15 @@ public class World {
         addOrganism(newOrganism, newPosition);
     }
 
+    public Human getHuman(){
+        for (Organism o : organisms){
+            if (o instanceof Human){
+                return (Human) o;
+            }
+        }
+        return null;
+    }
+    
     public int getNumberOfOrganisms() {
         return numberOfOrganisms;
     }
@@ -116,7 +125,7 @@ public class World {
 
     public void sortOrganisms(){
         organisms.sort(
-                Comparator.comparing(Organism::getInitiative).reversed()
+                Comparator.comparing(Organism::getInitiative)
                         .thenComparing(Organism::getAge).reversed()
         );
     }
@@ -148,12 +157,13 @@ public class World {
                 addEvent(org.getNazwa() + " przesunal sie na (" + position.getX() + ", " + position.getY() + ")");
             }else {
                 Organism other = getOrganismaAtPosition(position);
-                org.Collision(other);
+                other.Collision(org);
+
             }
         }
     }
 
-    protected Organism getOrganismaAtPosition(Point position){
+    public Organism getOrganismaAtPosition(Point position){
         for (Organism o : organisms){
             if (o.getPosition().getX() == position.getX() && o.getPosition().getY() == position.getY()){
                 return o;

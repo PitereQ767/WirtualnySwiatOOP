@@ -47,12 +47,16 @@ public class Panel extends JPanel {
         List<Organism> organismList = world.getOrganisms();
 
         for (Organism o : organismList){
-            g.setColor(o.getColor());
 
-            Point position = o.getPosition();
-            int x = position.getX();
-            int y = position.getY();
-            g.fillRect(x * cellSize, y * cellSize, cellSize, cellSize);
+            if (o.getIsAlive()){
+                g.setColor(o.getColor());
+
+                Point position = o.getPosition();
+                int x = position.getX();
+                int y = position.getY();
+                g.fillRect(x * cellSize, y * cellSize, cellSize, cellSize);
+            }
+
         }
     }
 }

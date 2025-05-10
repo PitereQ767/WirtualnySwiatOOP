@@ -28,4 +28,11 @@ public class Guarana extends Plant {
     public Organism makeNewOrganism(Point position){
         return new Guarana(world, position);
     }
+
+    @Override
+    public void Collision(Organism attacker){
+        attacker.setPower(attacker.getPower() + 3);
+
+        collisionHelper(attacker, this.getPosition());
+    }
 }

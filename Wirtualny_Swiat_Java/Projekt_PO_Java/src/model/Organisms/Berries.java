@@ -28,4 +28,10 @@ public class Berries extends Plant {
     public Organism makeNewOrganism(Point position){
         return new Berries(world, position);
     }
+
+    @Override
+    public void Collision(Organism attacker){
+        attacker.setAlive(false);
+        world.addEvent(attacker.getNazwa() + " zjadł wilcze jaody i zmarl");
+    }
 }

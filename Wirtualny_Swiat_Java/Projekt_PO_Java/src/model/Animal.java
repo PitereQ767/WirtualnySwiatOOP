@@ -3,7 +3,7 @@ package model;
 import java.util.Random;
 
 public abstract class Animal extends Organism{
-    private final Random random = new Random();
+    public final Random random = new Random();
 
     public Animal(World world, Point position, int power, int initiative){
         super(world, position, power, initiative);
@@ -24,5 +24,10 @@ public abstract class Animal extends Organism{
         }
 
         world.tryToMoveOrganism(this, newPosition);
+    }
+
+    @Override
+    public void Collision(){
+
     }
 }

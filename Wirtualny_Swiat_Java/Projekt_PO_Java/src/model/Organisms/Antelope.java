@@ -22,4 +22,21 @@ public class Antelope extends Animal {
     public String getNazwa(){
         return "Antylopa";
     }
+
+    @Override
+    public void Action(){
+        increaseAge();
+        Point currentPos = getPosition();
+        int direction = random.nextInt(4);
+        Point newPosition = new Point(currentPos.getX(), currentPos.getY());
+
+        switch (direction){
+            case 0 -> newPosition.setY(currentPos.getY() - 2);
+            case 1 -> newPosition.setX(currentPos.getX() + 2);
+            case 2 -> newPosition.setY(currentPos.getY() + 2);
+            case 3 -> newPosition.setX(currentPos.getX() - 2);
+        }
+
+        world.tryToMoveOrganism(this, newPosition);
+    }
 }

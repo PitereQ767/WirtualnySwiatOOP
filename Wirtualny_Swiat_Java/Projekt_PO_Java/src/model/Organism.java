@@ -6,7 +6,7 @@ public abstract class Organism {
     private final int initiative, power;
     private int age;
     boolean alive;
-    World world;
+    protected World world;
     Point position;
 
     public Organism(World world, Point position, int power, int initiative){
@@ -19,6 +19,7 @@ public abstract class Organism {
     public abstract Color getColor();
     public abstract void Action();
     public abstract String getNazwa();
+    public abstract void Collision();
 
     public Point getPosition() {
         return position;
@@ -34,6 +35,10 @@ public abstract class Organism {
 
     public int getAge() {
         return age;
+    }
+
+    public int getPower() {
+        return power;
     }
 
     protected void increaseAge(){

@@ -60,7 +60,7 @@ public class Frame extends JFrame {
 
         add(legendPanel, BorderLayout.EAST);
 
-        logArea = new JTextArea(10, 20);
+        logArea = new JTextArea(10, 25);
         logArea.setEditable(false);
         JScrollPane scrollPane = new JScrollPane(logArea);
         JPanel lefPanel = new JPanel();

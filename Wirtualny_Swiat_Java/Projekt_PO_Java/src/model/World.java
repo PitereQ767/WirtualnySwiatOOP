@@ -12,7 +12,7 @@ public class World {
     private List<Organism> organisms;
     private List<String> events = new ArrayList<>();
     private final int numberOfOrganisms = 10;
-    private final int numberOfTypeOrganisms = 6;
+    private final int numberOfTypeOrganisms = 7;
     private final Random random = new Random();
     public boolean endGame = false;
 
@@ -67,11 +67,12 @@ public class World {
 
         switch (randomNum){
             case 0: return new Wolf(this, position);
-            case 1: return new Sheep(this, position);
+            case 1: return new Fox(this, position);
             case 2: return new Turtle(this, position);
-            case 3: return new Fox(this, position);
+            case 3: return new Sheep(this, position);
             case 4: return new Antelope(this, position);
             case 5: return new Cyber_Sheep(this, position);
+            case 6: return new BarszczSosnowskiego(this, position);
         }
 
         return null;
@@ -134,8 +135,21 @@ public class World {
             if (isEmpty(position)){
                 moveOrganism(org, position);
                 addEvent(org.getNazwa() + " przesunal sie na (" + position.getX() + ", " + position.getY() + ")");
+            }else {
+                Organism other = getOrganismaAtPosition(position);
+                
             }
         }
+    }
+
+    protected Organism getOrganismaAtPosition(Point position){
+        for (Organism o : organisms){
+            if (o.getPosition().getX() == position.getX() && o.getPosition().getY() == position.getY()){
+                return o;
+            }
+        }
+
+        return null;
     }
 
     public void addEvent(String message){

@@ -22,4 +22,14 @@ public class Turtle extends Animal {
     public String getNazwa(){
         return "Żółw";
     }
+    @Override
+    public void Action(){
+        int randomNum = random.nextInt(100);
+        if (randomNum < 75){
+            increaseAge();
+            world.addEvent("Zółw zostaje w miejscu na pozycji (" + this.getPosition().getX() + ", " + this.getPosition().getY() + ")");
+            return;
+        }
+        super.Action();
+    }
 }

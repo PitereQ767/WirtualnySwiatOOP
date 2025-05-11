@@ -1,12 +1,14 @@
 package model;
 
+import model.Organisms.Human;
+
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public abstract class Organism {
-    private final int initiative;
+    private int initiative;
     private int age, power;
     private boolean alive = true;
     protected World world;
@@ -44,6 +46,14 @@ public abstract class Organism {
 
     public int getInitiative() {
         return initiative;
+    }
+
+    public void setInitiative(int tmp){
+        this.initiative = tmp;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public int getAge() {
@@ -99,8 +109,12 @@ public abstract class Organism {
             }
 
         }else {
+            if (attacker instanceof Human){
+                world.killHuman();
+                return;
+            }
             attacker.setAlive(false);
-            world.addEvent(this.getNazwa() + " zaił " + attacker.getNazwa() + " na pozycji (" + position.getX() + ", " + position.getY() + ")");
+            world.addEvent(this.getNazwa() + " zabił " + attacker.getNazwa() + " na pozycji (" + position.getX() + ", " + position.getY() + ")");
             if (this.getIsAlive()){
                 world.moveOrganism(this, position);
             }

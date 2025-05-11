@@ -14,7 +14,6 @@ public class Frame extends JFrame {
     private final int cellSize = 20;
 
     private final JLabel infoLabel;
-    private int tura = 0;
 
     private final JLabel idLabel;
 
@@ -37,7 +36,7 @@ public class Frame extends JFrame {
 
 
         JPanel infoPanel = new JPanel();
-        infoLabel = new JLabel("Tura: " + tura);
+        infoLabel = new JLabel("Tura: " + world.getTura());
         directionLabel = new JLabel("Kierunek: brak");
         immortalityLabel = new JLabel("Niesmiertelnosc: Nieaktywna");
         infoPanel.add(infoLabel);
@@ -113,7 +112,7 @@ public class Frame extends JFrame {
                         if (!human.getImmortality()){
                             human.setImmortality(true);
                             immortalityLabel.setText("Niesmiertelnosc: Aktywna");
-                            humanLastImmortality = tura;
+                            human.setImortalityRounds(5);
                         }
                     }
                     case KeyEvent.VK_ENTER -> {
@@ -124,11 +123,7 @@ public class Frame extends JFrame {
                                 humanMove = null;
                                 directionLabel.setText("Kierunek: brak");
 
-                                Human human = world.getHuman();
-                                if (tura - humanLastImmortality == 5){
-                                    human.setImmortality(false);
-                                    immortalityLabel.setText("Niesmiertelnosc: Nieaktywna");
-                                }
+                                updateImmortalityLabel();
 
                                 StringBuilder sb = new StringBuilder();
                                 for (String message : world.getEvents()){
@@ -137,17 +132,12 @@ public class Frame extends JFrame {
                                 logArea.setText(sb.toString());
                                 world.clearEventLog();
 
-                                tura++;
-                                infoLabel.setText("Tura: " + tura);
+                                world.setTura(world.getTura() + 1);
+                                infoLabel.setText("Tura: " + world.getTura());
                                 panel.repaint();
                             }else {
                                 world.makeRun();
-
-                                Human human = world.getHuman();
-                                if (tura - humanLastImmortality == 5){
-                                    human.setImmortality(false);
-                                    immortalityLabel.setText("Niesmiertelnosc: Nieaktywna");
-                                }
+                                updateImmortalityLabel();
 
                                 StringBuilder sb = new StringBuilder();
                                 for (String message : world.getEvents()){
@@ -156,8 +146,8 @@ public class Frame extends JFrame {
 
                                 logArea.setText(sb.toString());
                                 world.clearEventLog();
-                                tura++;
-                                infoLabel.setText("Tura: " + tura);
+                                world.setTura(world.getTura() + 1);
+                                infoLabel.setText("Tura: " + world.getTura());
                                 panel.repaint();
                             }
                         }else {
@@ -165,6 +155,17 @@ public class Frame extends JFrame {
                             dispose();
                             return;
                         }
+                    }
+                    case KeyEvent.VK_S -> {
+                        world.saveToFile();
+                        JOptionPane.showMessageDialog(Frame.this, "Gra została zapisana!");
+                    }
+                    case KeyEvent.VK_L -> {
+                        world.loadGameFromFile();
+                        repaint();
+                        infoLabel.setText("Tura: " + world.getTura());
+                        updateImmortalityLabel();
+                        JOptionPane.showMessageDialog(Frame.this, "Gra została wczytana!");
                     }
                 }
             }
@@ -180,6 +181,16 @@ public class Frame extends JFrame {
         item.add(textLabel);
         return item;
     }
+
+    private void updateImmortalityLabel() {
+        Human human = world.getHuman();
+        if (human != null && human.getImmortality()) {
+            immortalityLabel.setText("Niesmiertelnosc: Aktywna (" + human.getImortalityRounds() + ")");
+        } else {
+            immortalityLabel.setText("Niesmiertelnosc: Nieaktywna");
+        }
+    }
+
 
 
 }

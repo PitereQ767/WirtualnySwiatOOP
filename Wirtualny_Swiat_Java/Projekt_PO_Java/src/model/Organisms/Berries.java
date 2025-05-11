@@ -33,11 +33,6 @@ public class Berries extends Plant {
     public void Collision(Organism attacker){
         if (attacker instanceof Human){
             world.killHuman();
-            if(world.getHuman().getIsAlive()){
-                world.addEvent("Czlowiek zjadl wilcze jagody ale przezyl dzieki niesmiertelnisci");
-            }else {
-                world.addEvent("Czlowiek zjadl wilcze jagody i zginal");
-            }
             return;
         }
         attacker.setAlive(false);

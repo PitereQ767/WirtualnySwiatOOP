@@ -1,0 +1,23 @@
+20 20 1
+Czlowiek 15 2 5 4 14 1 2
+Lis 14 18 3 7 14
+Lis 11 10 3 7 14
+Lis 6 11 3 7 14
+Wilk 4 0 9 5 14
+Wilk 18 11 9 5 14
+Wilk 17 12 9 5 4
+Owca 13 16 4 4 14
+Antylopa 4 5 4 4 14
+Antylopa 15 14 4 4 14
+Zolw 7 8 2 1 14
+Trawa 1 11 0 0 14
+BarszczSosnowskiego 11 0 10 0 14
+WilczeJagody 5 4 99 0 14
+Mlecz 13 11 0 0 14
+WilczeJagody 17 14 99 0 14
+BarszczSosnowskiego 8 16 10 0 14
+Mlecz 12 9 0 0 14
+Mlecz 4 12 0 0 14
+Mlecz 16 16 0 0 14
+Mlecz 3 12 0 0 12
+Mlecz 4 13 0 0 2

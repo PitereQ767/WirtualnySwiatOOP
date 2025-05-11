@@ -10,6 +10,7 @@ import java.awt.*;
 public class Human extends Animal {
     private Color humanColor = Color.PINK;
     private boolean immortality = false;
+    private int imortalityRounds = 0;
 
     public Human(World world, Point position){
         super(world, position, 5, 4);
@@ -18,6 +19,14 @@ public class Human extends Animal {
 
     public boolean getImmortality() {
         return immortality;
+    }
+
+    public int getImortalityRounds(){
+        return imortalityRounds;
+    }
+
+    public void setImortalityRounds(int tmp){
+        imortalityRounds = tmp;
     }
 
     public void setImmortality(boolean tmp) {
@@ -31,12 +40,20 @@ public class Human extends Animal {
 
     @Override
     public String getNazwa(){
-        return "Człowiek";
+        return "Czlowiek";
     }
 
     @Override
     public Organism makeNewOrganism(Point position){
         return new Human(world, position);
+    }
+
+    private void immortalityFunction(){
+        if (getImmortality()){
+            if (--imortalityRounds <= 0){
+                setImmortality(false);
+            }
+        }
     }
 
     @Override
@@ -56,11 +73,20 @@ public class Human extends Animal {
             }
 
             world.tryToMoveOrganism(this, newPosition);
+            world.humanMove = null;
         }
+
+        immortalityFunction();
     }
 
     @Override
     public void Collision(Organism attacker){
+        if (getImmortality()) {
+            world.addEvent(this.getNazwa() + " uniknął śmierci dzięki nieśmiertelności przed " + attacker.getNazwa() + " na pozycji (" + getPosition().getX() + ", " + getPosition().getY() + ")");
+            attacker.setAlive(false);
+            return;
+        }
+
         if(attacker.getPower() >= this.getPower()){
             world.killHuman();
             if (!getIsAlive()){
@@ -68,13 +94,14 @@ public class Human extends Animal {
                 Point newAttackerPos = new Point(getPosition().getX(), getPosition().getY());
                 world.moveOrganism(attacker, newAttackerPos);
             }
-        }else {
+        } else {
             attacker.setAlive(false);
-            world.addEvent(this.getNazwa() + " zaił " + attacker.getNazwa() + " na pozycji (" + getPosition().getX() + ", " + getPosition().getY() + ")");
+            world.addEvent(this.getNazwa() + " zabił " + attacker.getNazwa() + " na pozycji (" + getPosition().getX() + ", " + getPosition().getY() + ")");
             Point newDeffenderPos = new Point(getPosition().getX(), getPosition().getY());
             if (this.getIsAlive()){
                 world.moveOrganism(this, newDeffenderPos);
             }
         }
     }
+
 }

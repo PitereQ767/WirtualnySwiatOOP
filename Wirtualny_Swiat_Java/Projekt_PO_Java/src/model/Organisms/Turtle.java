@@ -22,7 +22,7 @@ public class Turtle extends Animal {
 
     @Override
     public String getNazwa(){
-        return "Żółw";
+        return "Zolw";
     }
     @Override
     public void Action(){

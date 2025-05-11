@@ -117,47 +117,53 @@ public class Frame extends JFrame {
                         }
                     }
                     case KeyEvent.VK_ENTER -> {
-                        if (humanMove != null) {
-                            world.humanMove = humanMove;
-                            world.makeRun();
-                            humanMove = null;
-                            directionLabel.setText("Kierunek: brak");
+                        if ( ! world.isEndGame()){
+                            if (humanMove != null) {
+                                world.humanMove = humanMove;
+                                world.makeRun();
+                                humanMove = null;
+                                directionLabel.setText("Kierunek: brak");
 
-                            Human human = world.getHuman();
-                            if (tura - humanLastImmortality == 5){
-                                human.setImmortality(false);
-                                immortalityLabel.setText("Niesmiertelnosc: Nieaktywna");
+                                Human human = world.getHuman();
+                                if (tura - humanLastImmortality == 5){
+                                    human.setImmortality(false);
+                                    immortalityLabel.setText("Niesmiertelnosc: Nieaktywna");
+                                }
+
+                                StringBuilder sb = new StringBuilder();
+                                for (String message : world.getEvents()){
+                                    sb.append(message).append("\n");
+                                }
+                                logArea.setText(sb.toString());
+                                world.clearEventLog();
+
+                                tura++;
+                                infoLabel.setText("Tura: " + tura);
+                                panel.repaint();
+                            }else {
+                                world.makeRun();
+
+                                Human human = world.getHuman();
+                                if (tura - humanLastImmortality == 5){
+                                    human.setImmortality(false);
+                                    immortalityLabel.setText("Niesmiertelnosc: Nieaktywna");
+                                }
+
+                                StringBuilder sb = new StringBuilder();
+                                for (String message : world.getEvents()){
+                                    sb.append(message).append("\n");
+                                }
+
+                                logArea.setText(sb.toString());
+                                world.clearEventLog();
+                                tura++;
+                                infoLabel.setText("Tura: " + tura);
+                                panel.repaint();
                             }
-
-                            StringBuilder sb = new StringBuilder();
-                            for (String message : world.getEvents()){
-                                sb.append(message).append("\n");
-                            }
-                            logArea.setText(sb.toString());
-                            world.clearEventLog();
-
-                            tura++;
-                            infoLabel.setText("Tura: " + tura);
-                            panel.repaint();
                         }else {
-                            world.makeRun();
-
-                            Human human = world.getHuman();
-                            if (tura - humanLastImmortality == 5){
-                                human.setImmortality(false);
-                                immortalityLabel.setText("Niesmiertelnosc: Nieaktywna");
-                            }
-
-                            StringBuilder sb = new StringBuilder();
-                            for (String message : world.getEvents()){
-                                sb.append(message).append("\n");
-                            }
-
-                            logArea.setText(sb.toString());
-                            world.clearEventLog();
-                            tura++;
-                            infoLabel.setText("Tura: " + tura);
-                            panel.repaint();
+                            JOptionPane.showMessageDialog(Frame.this, "Gra zakończona!");
+                            dispose();
+                            return;
                         }
                     }
                 }

@@ -58,4 +58,23 @@ public class Human extends Animal {
             world.tryToMoveOrganism(this, newPosition);
         }
     }
+
+    @Override
+    public void Collision(Organism attacker){
+        if(attacker.getPower() >= this.getPower()){
+            world.killHuman();
+            if (!getIsAlive()){
+                world.addEvent(attacker.getNazwa() + " zabił " + this.getNazwa() + " na pozycji (" + getPosition().getX() + ", " + getPosition().getY() + ")");
+                Point newAttackerPos = new Point(getPosition().getX(), getPosition().getY());
+                world.moveOrganism(attacker, newAttackerPos);
+            }
+        }else {
+            attacker.setAlive(false);
+            world.addEvent(this.getNazwa() + " zaił " + attacker.getNazwa() + " na pozycji (" + getPosition().getX() + ", " + getPosition().getY() + ")");
+            Point newDeffenderPos = new Point(getPosition().getX(), getPosition().getY());
+            if (this.getIsAlive()){
+                world.moveOrganism(this, newDeffenderPos);
+            }
+        }
+    }
 }

@@ -12,7 +12,7 @@ public class World {
     private List<Organism> organisms;
     private List<String> events = new ArrayList<>();
     private final int numberOfOrganisms = 20;
-    private final int numberOfTypeOrganisms = 11;
+    private final int numberOfTypeOrganisms = 10;
     private final Random random = new Random();
     public boolean endGame = false;
 
@@ -71,12 +71,12 @@ public class World {
             case 2: return new Turtle(this, position);
             case 3: return new Sheep(this, position);
             case 4: return new Antelope(this, position);
-            case 5: return new Cyber_Sheep(this, position);
-            case 6: return new BarszczSosnowskiego(this, position);
-            case 7: return new Guarana(this, position);
-            case 8: return new Grass(this, position);
-            case 9: return new Milkweed(this, position);
-            case 10: return new Berries(this, position);
+//            case 5: return new Cyber_Sheep(this, position);
+            case 5: return new BarszczSosnowskiego(this, position);
+            case 6: return new Guarana(this, position);
+            case 7: return new Grass(this, position);
+            case 8: return new Milkweed(this, position);
+            case 9: return new Berries(this, position);
         }
 
         return null;
@@ -114,7 +114,18 @@ public class World {
         }
         return null;
     }
-    
+
+    public void killHuman(){
+        Human human = getHuman();
+        if(!human.getImmortality()){
+            human.setAlive(false);
+            endGame = true;
+            addEvent("Człowiek zginął");
+        }else{
+            addEvent("Człowiek przeżył dzięki aktywowanej nieśmiertelności");
+        }
+    }
+
     public int getNumberOfOrganisms() {
         return numberOfOrganisms;
     }
@@ -183,5 +194,9 @@ public class World {
 
     public void clearEventLog(){
         events.clear();
+    }
+
+    public boolean isEndGame() {
+        return endGame;
     }
 }

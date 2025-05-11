@@ -56,6 +56,11 @@ public class BarszczSosnowskiego extends Plant {
                     continue;
                 }
 
+                if (other instanceof Human){
+                    world.killHuman();
+                    continue;
+                }
+
                 other.setAlive(false);
                 Point otherPosition = other.getPosition();
                 world.addEvent("Barszcz Sosnowskiego zabil " + other.getNazwa() + " na pozycji " + otherPosition.getX() + ", " + otherPosition.getY() + ")");

@@ -1,12 +1,13 @@
 package view;
 
-import model.Organisms.Human;
+import model.Organism;
+import model.Organisms.*;
+import model.Point;
 import model.World;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
+import java.awt.event.*;
 
 public class Frame extends JFrame {
     private final Panel panel;
@@ -33,6 +34,7 @@ public class Frame extends JFrame {
 
         panel = new Panel(world, cellSize);
         add(panel, BorderLayout.CENTER);
+        addMouseListenera(panel);
 
 
         JPanel infoPanel = new JPanel();
@@ -86,6 +88,7 @@ public class Frame extends JFrame {
 
         setFocusable(true);
         requestFocusInWindow();
+
 
         addKeyListener(new KeyAdapter() {
             @Override
@@ -188,6 +191,52 @@ public class Frame extends JFrame {
             immortalityLabel.setText("Niesmiertelnosc: Aktywna (" + human.getImortalityRounds() + ")");
         } else {
             immortalityLabel.setText("Niesmiertelnosc: Nieaktywna");
+        }
+    }
+
+    private void addMouseListenera(Panel panel){
+        panel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent event) {
+                int x = event.getX() / cellSize;
+                int y = event.getY() / cellSize;
+                Point clickedPoint = new Point(x, y);
+
+                if (world.isEmpty(clickedPoint)){
+                    showOptionsOrganisms(clickedPoint);
+                }
+            }
+
+        });
+    }
+
+    private void showOptionsOrganisms(Point position){
+        String[] options = {"Wilk", "Lis", "Antylopa", "CyberOwca", "Guarana", "Mlecz", "Owca", "Trawa",
+        "WilczeJagody", "Zolw", "BarszczSosnowskiego"};
+
+        String choice = (String) JOptionPane.showInputDialog(this, "Wybierz organizm, który chcesz dodać", "Dodaj organizm", JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
+
+        if (choice != null){
+
+            Organism newOrganism = switch (choice){
+                case "Wilk" -> new Wolf(world, position);
+                case "Lis" -> new Fox(world, position);
+                case "Antylopa" -> new Antelope(world, position);
+                case "CyberOwca" -> new Cyber_Sheep(world, position);
+                case "Guarana" -> new Guarana(world, position);
+                case "Mlecz" -> new Milkweed(world, position);
+                case "Owca" -> new Sheep(world, position);
+                case "Trawa" -> new Grass(world, position);
+                case "WilczeJagody" -> new Berries(world, position);
+                case "Zolw" -> new Turtle(world, position);
+                case "BarszczSosnowskiego" -> new BarszczSosnowskiego(world, position);
+                default -> null;
+            };
+
+            if (newOrganism != null){
+                world.addOrganism(newOrganism, position);
+                repaint();
+            }
         }
     }
 

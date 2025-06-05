@@ -1,7 +1,6 @@
 import pygame
 from config import max_window_width, max_window_height, cellSize
-
-from square import SquareWorld
+from world import World
 
 class GameGui:
     def __init__(self, width, height):
@@ -12,7 +11,7 @@ class GameGui:
         pygame.display.set_caption("Wirtualny Świat")
         self.font = pygame.font.SysFont("Arial", 16)
         self.clock = pygame.time.Clock()
-        self.world = SquareWorld(width, height)
+        self.world = World(width, height)
 
         self.world.createWorld()
 
@@ -29,10 +28,8 @@ class GameGui:
     def draw(self):
         self.window.fill((255, 255, 255))
         for organism in self.world.organisms:
-            position = organism.getPosition()
-            x = position.GetX()
-            y = position.GetY()
-            color = (100, 100, 100)
+            x, y = organism.getPosition()
+            color = organism.getColor()
             self.drawGrid()
             pygame.draw.rect(self.window, color, (x * cellSize, y * cellSize, cellSize, cellSize))
             pygame.draw.rect(self.window, (0, 0, 0), (x * cellSize, y * cellSize, cellSize, cellSize), 1)

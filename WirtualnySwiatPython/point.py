@@ -6,3 +6,9 @@ class Point:
         return self.x
     def GetY(self):
         return self.y
+
+    def __eq__(self, other):
+        return isinstance(other, Point) and self.x == other.x and self.y == other.y
+
+    def __iter__(self):
+        return iter((self.x, self.y))

@@ -9,11 +9,7 @@ def main():
         width = 20
         height = 20
 
-    type = input("Typ planszy: ").strip().lower()
-    if type not in ['square', 'hex']:
-        type = 'square'
-
-    game = GameGui(width, height, type)
+    game = GameGui(width, height)
     game.run()
 
 if __name__ == '__main__':

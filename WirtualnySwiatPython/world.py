@@ -1,7 +1,8 @@
 import random
 from abc import ABC, abstractmethod
 from point import Point
-from Organism import Organism
+from organism import Organism
+from config import numberOfOrganisms
 
 
 class World(ABC):
@@ -22,7 +23,7 @@ class World(ABC):
     def draw(self, screen, font):
         pass
 
-    def createWorld(self, numberOfOrganisms = 10):
+    def createWorld(self):
         for i in range(numberOfOrganisms):
             x = random.randint(0, self.width - 1)
             y = random.randint(0, self.height - 1)

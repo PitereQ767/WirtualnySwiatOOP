@@ -168,6 +168,7 @@ public class Frame extends JFrame {
                         repaint();
                         infoLabel.setText("Tura: " + world.getTura());
                         updateImmortalityLabel();
+                        logArea.setText("");
                         JOptionPane.showMessageDialog(Frame.this, "Gra została wczytana!");
                     }
                 }

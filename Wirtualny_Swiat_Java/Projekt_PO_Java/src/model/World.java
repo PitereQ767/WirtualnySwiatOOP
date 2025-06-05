@@ -214,6 +214,7 @@ public class World {
             String immortalityString;
             String immortalityRounds;
 
+
             if (getHuman().getImmortality()){
                  immortalityString =  String.valueOf(1);
                  immortalityRounds = String.valueOf(getHuman().getImortalityRounds());

@@ -8,3 +8,5 @@ class Wolf(Animal):
 
     def getColor(self):
         return self.color
+    def getNazwa(self):
+        return "Wilk"

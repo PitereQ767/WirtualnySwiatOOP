@@ -6,7 +6,10 @@ class Point:
         return self.x
     def GetY(self):
         return self.y
-
+    def SetY(self, y):
+        self.y = y
+    def SetX(self, x):
+        self.x = x
     def __eq__(self, other):
         return isinstance(other, Point) and self.x == other.x and self.y == other.y
 

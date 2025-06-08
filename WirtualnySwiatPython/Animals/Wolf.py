@@ -8,5 +8,9 @@ class Wolf(Animal):
 
     def getColor(self):
         return self.color
+
     def getNazwa(self):
         return "Wilk"
+
+    def makeNewOrganism(self, position):
+        return Wolf(self.world, position)

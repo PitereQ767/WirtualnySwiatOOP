@@ -11,3 +11,6 @@ class Sheep(Animal):
 
     def getNazwa(self):
         return "Owca"
+
+    def makeNewOrganism(self, position):
+        return Sheep(self.world, position)

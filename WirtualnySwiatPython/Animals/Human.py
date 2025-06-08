@@ -16,10 +16,25 @@ class Human(Animal):
     def getNazwa(self):
         return "Czlowiek"
 
+    def setImmortality(self, imo):
+        self.immoratality = imo
+
+    def getImmortality(self):
+        return self.immoratality
+
+    def setImmortalityRounds(self, tmp):
+        self.immoratalityRounds = tmp
+
+    def getImmortalityRounds(self):
+        return self.immoratalityRounds
+
+    def makeNewOrganism(self, position):
+        return Human(self.world, position)
+
     def immortalityFunction(self):
         if self.immoratality:
-            self.immoratality -= 1
-            if self.immoratality <= 0:
+            self.immoratalityRounds -= 1
+            if self.immoratalityRounds < 0:
                 self.immoratality = False
 
     def Action(self):
@@ -44,5 +59,5 @@ class Human(Animal):
             newPosition = Point(new_x, new_y)
             self.world.tryToMoveOrganism(self, newPosition)
             self.world.humanMove = None
-        else:
-            self.immortalityFunction()
+
+        self.immortalityFunction()

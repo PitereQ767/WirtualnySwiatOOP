@@ -13,6 +13,9 @@ class Turtle(Animal):
     
     def getColor(self):
         return self.color
+
+    def makeNewOrganism(self, position):
+        return Turtle(self.world, position)
     
     def Action(self):
         ranNum = random.randint(0, 99)
@@ -21,3 +24,14 @@ class Turtle(Animal):
             self.world.addEvent(f"Zolw zostaje w miejscu na pozycji ({self.getPosition().GetX()}, {self.getPosition().GetY()})")
         else:
             super().Action()
+
+    def Collision(self, attacker):
+        if self.getNazwa() == attacker.getNazwa():
+            self.Multiplication(attacker)
+            return
+
+        if attacker.getPower() < 5:
+            self.world.addEvent(f"Zolw odparl atak {attacker.getNazwa()} na poztcji ({self.getPosition().GetX()}, {self.getPosition().GetY()})")
+            return
+
+        self.collisionHelper(attacker, self.position)

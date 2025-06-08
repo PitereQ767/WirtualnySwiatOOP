@@ -15,7 +15,10 @@ class CyberSheep(Animal):
         return self.color
 
     def getNazwa(self):
-        return "Cyber Owca"
+        return "CyberOwca"
+
+    def makeNewOrganism(self, position):
+        return CyberSheep(self.world, position)
 
     def Action(self):
         position = self.getPosition()

@@ -27,3 +27,17 @@ class Animal(Organism):
 
         new_position = Point(new_x, new_y)
         self.world.tryToMoveOrganism(self, new_position)
+
+    def Collision(self, attacker):
+        if self.getNazwa() == attacker.getNazwa():
+            self.Multiplication(attacker)
+            return
+
+        self.collisionHelper(attacker, self.getPosition())
+
+    def Multiplication (self, organism):
+        newPos = self.findPosition()
+        if newPos is not None:
+            newOrganism = self.makeNewOrganism(newPos)
+            self.world.organisms.append(newOrganism)
+            self.world.addEvent(f"{organism.getNazwa()} rozmnozyl sie na pozycji ({newPos.GetX()}, {newPos.GetY()})")

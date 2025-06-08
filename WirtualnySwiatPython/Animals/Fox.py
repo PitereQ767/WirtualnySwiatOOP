@@ -17,6 +17,9 @@ class Fox(Animal):
     def getNazwa(self):
         return "Lis"
 
+    def makeNewOrganism(self, position):
+        return Fox(self.world, position)
+
     def Action(self):
         self.increaseAge()
         position = self.getPosition()
